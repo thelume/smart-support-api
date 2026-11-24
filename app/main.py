@@ -1,5 +1,9 @@
 from fastapi import FastAPI
 from app.core.config import settings
+from app.database.session import engine, Base
+from app.models import ticket, article
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
