@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # Smart Support API
@@ -10,6 +9,10 @@
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0-D71F00?style=flat-square)
 ![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063?style=flat-square)
 ![Pytest](https://img.shields.io/badge/Pytest-Passing-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+
+<br>
+
+**[Documentação Técnica Completa (Wiki) →](https://github.com/thelume/smart-support-api/wiki)**
 
 </div>
 
@@ -152,7 +155,7 @@ flowchart LR
 
 ### Inicialização do Ambiente
 
-    git clone https://github.com/seu-usuario/smart-support-api.git
+    git clone https://github.com/thelume/smart-support-api.git
     cd smart-support-api
 
     python3 -m venv .venv
@@ -184,5 +187,5 @@ Os testes de integração utilizam `dependency_overrides` para redirecionar a se
 ---
 
 <div align="center">
- <em> Documentação elaborada com auxílio de IA </em>.
+ <em> Documentação elaborada com auxílio de IA. </em>
 </div>
