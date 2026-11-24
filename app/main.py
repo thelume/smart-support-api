@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from app.core.config import settings
 from app.database.session import engine, Base
 from app.models import ticket, article
+from app.api.v1.router import api_router
 
 Base.metadata.create_all(bind=engine)
 
@@ -10,6 +11,8 @@ app = FastAPI(
     version=settings.VERSION,
     description="API REST de Gestão de Tickets de TI e Base de Conhecimento com RAG.",
 )
+
+app.include_router(api_router, prefix=settings.API_V1_STR)
 
 
 @app.get("/health", tags=["Health Check"])
